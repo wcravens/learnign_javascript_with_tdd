@@ -28,7 +28,7 @@ There are 6 primative data types: `Boolean`, `Null`, `Undefined`, `Number`,
       expect( Boolean( NaN )        ).to.equal( false );
     } );
 
-    it( 'everythign else is truthy including empty array[], any string, empty functions and empty objects', function() {
+    it( 'everything else is truthy including empty array [], any non-empty string, functions and objects', function() {
       expect( Boolean( [] )             ).to.equal( true );
       expect( Boolean( 'a' )            ).to.equal( true );
       expect( Boolean( function() {} )  ).to.equal( true );
