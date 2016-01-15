@@ -19,15 +19,16 @@ There are 6 primative data types: `Boolean`, `Null`, `Undefined`, `Number`,
       expect( true  ).to.not.equal( false );
     } );
 
-    it( 'can be falsy', function() {
+    it( 'can be falsy; +0, -0, Empty String "", `null`, `undefined` and `NaN are all falsy ', function() {
       expect( Boolean( 0 )          ).to.equal( false );
+      expect( Boolean( -0 )         ).to.equal( false );
       expect( Boolean( "" )         ).to.equal( false );
       expect( Boolean( null )       ).to.equal( false );
       expect( Boolean( undefined )  ).to.equal( false );
       expect( Boolean( NaN )        ).to.equal( false );
     } );
 
-    it( 'everythign else is falsy including [], any string, empty functions and empty objects', function() {
+    it( 'everythign else is truthy including empty array[], any string, empty functions and empty objects', function() {
       expect( Boolean( [] )             ).to.equal( true );
       expect( Boolean( 'a' )            ).to.equal( true );
       expect( Boolean( function() {} )  ).to.equal( true );
@@ -47,14 +48,15 @@ There are 6 primative data types: `Boolean`, `Null`, `Undefined`, `Number`,
 
   describe( 'Number', function() {
 
-    it( 'zero has two representations, but they are equaivalent', function() {
-      expect( -0 ).to.equal( +0 );
+    it( 'zero has two representations, +0 and -0, but they are equaivalent', function() {
+      expect( +0 ).to.equal( -0 );
     } );
+
     it( 'can be -Infintity', function() {
       expect( 42 / -0 ).to.equal( -Infinity );
     } );
 
-    it( 'can be -Infintity', function() {
+    it( 'can be Infintity', function() {
       expect( 42 / 0 ).to.equal( Infinity );
     } );
 
