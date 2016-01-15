@@ -1,0 +1,27 @@
+{
+  "name": "learnign_javascript_with_tdd",
+  "version": "0.1.0",
+  "description": "Demonstrate Javascript Idioms with Test Driven Development Examples",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcravens/learnign_javascript_with_tdd.git"
+  },
+  "keywords": [],
+  "author": "Wes Cravens",
+  "license": "C-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/wcravens/learnign_javascript_with_tdd/issues"
+  },
+  "homepage": "https://github.com/wcravens/learnign_javascript_with_tdd#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
