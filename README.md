@@ -1,6 +1,9 @@
 # Learnign Javascript with TDD
 Demonstrate Javascript Idioms with Test Driven Development Examples
 
+    npm install
+    npm test
+
 <footer>
 <center>
 <a rel="license"
