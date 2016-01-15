@@ -1,5 +1,6 @@
-# Learnign Javascript with TDD
-Demonstrate Javascript Idioms with Test Driven Development Examples
+# Learning Javascript with TDD
+
+Demonstrate Javascript Idioms and Patterns with Test Driven Development Examples
 
     npm install
     npm test
