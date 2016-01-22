@@ -13,6 +13,11 @@ There are 6 primative data types: `Boolean`, `Null`, `Undefined`, `Number`,
 */
 
   describe( 'Boolean', function() {
+
+    it( 'comes with a an object wrapper to coerce it into an object', function() {
+      expect( Boolean( 'foo' ) ).to.equal( true );
+    } );
+
     it( 'can be true or false', function() {
       expect( true  ).to.equal( true );
       expect( false ).to.equal( false );
@@ -35,18 +40,21 @@ There are 6 primative data types: `Boolean`, `Null`, `Undefined`, `Number`,
       expect( Boolean( {} )             ).to.equal( true );
     } );
 
-
   } );
 
   describe( 'Null', function() {
-    it.skip( 'should something', function() {} );
+    it( 'should something' );
   } );
 
   describe( 'Undefined', function() {
-    it.skip( 'should something', function() {} );
+    it( 'should something' );
   } );
 
   describe( 'Number', function() {
+
+    it( 'comes with a an object wrapper to coerce it into an object', function() {
+      expect( Number( '5' ) ).to.equal( 5 );
+    } );
 
     it( 'zero has two representations, +0 and -0, but they are equaivalent', function() {
       expect( +0 ).to.equal( -0 );
@@ -71,11 +79,16 @@ There are 6 primative data types: `Boolean`, `Null`, `Undefined`, `Number`,
   } );
 
   describe( 'String', function() {
-    it.skip( 'should something', function() {} );
+
+    it( 'comes with a an object wrapper to coerce it into an object', function() {
+      expect( String( 123 ).length ).to.equal( 3 );
+    } );
+
+    it( 'should something' );
   } );
 
   describe( 'Symbol', function() {
-    it.skip( 'should something', function() {} );
+    it( 'should something' );
   } );
 
 } );
